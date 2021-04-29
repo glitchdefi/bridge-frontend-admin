@@ -25,6 +25,7 @@ const HomePage = (props) => {
   const headers = [
     { name: "No.", field: "", sortable: false },
     { name: "Wallet Address", field: "address", sortable: true },
+    { name: "Status", field: "status", sortable: true },
     { name: "Network", field: "network", sortable: true },
     { name: "Action", field: "", sortable: false },
   ];
@@ -166,7 +167,7 @@ const HomePage = (props) => {
                             </div>
                           </CopyToClipboard>
                         </td>
-                        
+                        <td className="tdNetwork text-uppercase">{item.isInUsed ? "InUsed":"Free"}</td>
                         <td className="tdNetwork text-uppercase">{item.network}</td>
                         <td className="tdAction">
                           {/* <button type="button" className="btn btn-sm btn-primary me-2" onClick={() => handleEditWallet(item)} data-bs-toggle="modal" data-bs-target="#formModal"><i className="mdi mdi-square-edit-outline"></i></button> */}
