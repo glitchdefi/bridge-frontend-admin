@@ -13,3 +13,8 @@ The following prerequisites are required to be installed on your system before y
 npm install
 npm run start
 ```
+
+## Deploy
+- Pull newest code 
+- ```yarn unzip```
+- Run 
